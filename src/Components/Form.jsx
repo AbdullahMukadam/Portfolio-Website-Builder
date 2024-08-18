@@ -42,7 +42,7 @@ function PortfolioForm({ formData, onInputChange }) {
           <script src="https://cdn.tailwindcss.com"></script>
         </head>
         <body>
-          <div id='home' class='w-full min-h-screen md:overflow-hidden'>
+          <div id='home' id="home2" class='w-full min-h-screen md:overflow-hidden'>
   <div class='w-full h-fit'>
     <div class="w-full bg-[#fe5211] relative">
     <div id="navMenu" class="absolute z-40 w-full bg-red-500 rounded-lg h-0 transition-all transition-800 flex items-center justify-center md:hidden">
@@ -64,8 +64,8 @@ function PortfolioForm({ formData, onInputChange }) {
             </label>
             <div class="w-full hidden h-full md:block">
                 <div class="w-full h-full flex items-center gap-7 justify-end">
-                    <a href="#home" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
-                    <a href="#project" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
+                    <a href="#home2" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
+                    <a href="#projects2" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@ function PortfolioForm({ formData, onInputChange }) {
   </div>
   <div class='w-full h-fit p-1'>
 
-    <div id='projects' class='w-full h-fit p-2'>
+    <div id='projects' id="projects2" class='w-full h-fit p-2'>
   <div class='w-full p-2 bg-red-400 rounded-tl-lg rounded-tr-lg text-center'>
     <h1 class='font-customFont text-[20vw] w-full text-white'>Projects</h1>
   </div>
