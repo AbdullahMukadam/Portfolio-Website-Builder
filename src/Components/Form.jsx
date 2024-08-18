@@ -64,8 +64,8 @@ function PortfolioForm({ formData, onInputChange }) {
             </label>
             <div class="w-full hidden h-full md:block">
                 <div class="w-full h-full flex items-center gap-7 justify-end">
-                    <a href="/#home" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
-                    <a href="/#project" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
+                    <a href="#home" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
+                    <a href="#project" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
                 </div>
             </div>
         </div>
