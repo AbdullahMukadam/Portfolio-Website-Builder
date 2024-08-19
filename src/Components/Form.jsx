@@ -220,21 +220,21 @@ function PortfolioForm({ formData, onInputChange }) {
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project1Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project1Date || "Example : 2024"}</h2>
-      <a href={${formData.Project1Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project1Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project1Detail || "Example : Features of your Project"}
       </p>
     </div>
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project2Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project2Date || "Example : 2024"}</h2>
-      <a href={${formData.Project2Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project2Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project2Detail || "Example : Features of your Project"}
       </p>
     </div>
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project3Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project3Date || "Example : 2024"}</h2>
-      <a href={${formData.Project3Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project3Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project3Detail || "Example : Features of your Project"}
       </p>
     </div>
