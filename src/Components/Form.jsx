@@ -44,15 +44,15 @@ function PortfolioForm({ formData, onInputChange }) {
         <body>
           <div id='home' id="home2" class='w-full min-h-screen md:overflow-hidden'>
   <div class='w-full h-fit'>
-    <div class="w-full bg-[#fe5211] relative">
+    <div class="w-full bg-red-500 relative">
     <div id="navMenu" class="absolute z-40 w-full bg-red-500 rounded-lg h-0 transition-all transition-800 flex items-center justify-center md:hidden">
         <div id="navItems" class="w-[50%] h-[50%] flex items-center flex-col hidden">
             <a href="#home" class="text-[19vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
             <a href="#projects" class="text-[19vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
         </div>
     </div>
-    <div class="w-full bg-[#fe5211] relative flex items-center justify-between">
-        <div class="w-[50%] h-full bg-[#fe5211] p-2">
+    <div class="w-full bg-red-500 relative flex items-center justify-between">
+        <div class="w-[50%] h-full bg-red-500 p-2">
             <img class="h-16 mix-blend-multiply" src="https://i.postimg.cc/YSwYbyDw/logo.jpg" alt="logo" />
         </div>
         <div class="w-[50%] h-full p-2 flex justify-end z-50">
