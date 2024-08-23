@@ -9,7 +9,7 @@ function Navbar() {
     }
     return (
         
-        <div className='w-full bg-[#fe5211] relative '>
+        <div className='w-full bg-red-400 relative '>
             <div className={`absolute z-40 w-full bg-red-500 rounded-lg ${open ? "h-screen " : "h-0"} transition-all transition-800 flex items-center justify-center md:hidden`}>
                <div className={`w-[50%] h-[50%] flex items-center flex-col  ${open ? "block transition-all transition-300 delay-500" : "hidden"}`}>
                   <a href="#home" className={`text-[19vw] font-customFont  capitalize hover:border-b-4 border-black m-0 transition-all transition-300`}>Home</a>
@@ -17,8 +17,8 @@ function Navbar() {
                   
                </div>
             </div>
-            <div className='w-full bg-[#fe5211] relative flex items-center justify-between'>
-            <div className='w-[50%] h-full bg-[#fe5211] p-2'>
+            <div className='w-full bg-red-400 relative flex items-center justify-between'>
+            <div className='w-[50%] h-full bg-red-400 p-2'>
                 <img className='h-16 mix-blend-multiply' src="/logo.png" alt="logo" />
             </div>
             <div className='w-[50%] h-full p-2 flex justify-end z-50 ' >
