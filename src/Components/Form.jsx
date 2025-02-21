@@ -42,17 +42,17 @@ function PortfolioForm({ formData, onInputChange }) {
           <script src="https://cdn.tailwindcss.com"></script>
         </head>
         <body>
-          <div id='home' class='w-full min-h-screen md:overflow-hidden'>
+          <div id='home' id="home2" class='w-full min-h-screen md:overflow-hidden'>
   <div class='w-full h-fit'>
-    <div class="w-full bg-[#fe5211] relative">
+    <div class="w-full bg-red-500 relative">
     <div id="navMenu" class="absolute z-40 w-full bg-red-500 rounded-lg h-0 transition-all transition-800 flex items-center justify-center md:hidden">
         <div id="navItems" class="w-[50%] h-[50%] flex items-center flex-col hidden">
             <a href="#home" class="text-[19vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
             <a href="#projects" class="text-[19vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
         </div>
     </div>
-    <div class="w-full bg-[#fe5211] relative flex items-center justify-between">
-        <div class="w-[50%] h-full bg-[#fe5211] p-2">
+    <div class="w-full bg-red-500 relative flex items-center justify-between">
+        <div class="w-[50%] h-full bg-red-500 p-2">
             <img class="h-16 mix-blend-multiply" src="https://i.postimg.cc/YSwYbyDw/logo.jpg" alt="logo" />
         </div>
         <div class="w-[50%] h-full p-2 flex justify-end z-50">
@@ -64,8 +64,8 @@ function PortfolioForm({ formData, onInputChange }) {
             </label>
             <div class="w-full hidden h-full md:block">
                 <div class="w-full h-full flex items-center gap-7 justify-end">
-                    <a href="/#home" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
-                    <a href="/#project" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
+                    <a href="" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black m-0 transition-all transition-300">Home</a>
+                    <a href="" class="text-[3vw] font-customFont capitalize hover:border-b-4 border-black transition-all transition-300">Projects</a>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@ function PortfolioForm({ formData, onInputChange }) {
   </div>
   <div class='w-full h-fit p-1'>
 
-    <div id='projects' class='w-full h-fit p-2'>
+    <div id='projects' id="projects2" class='w-full h-fit p-2'>
   <div class='w-full p-2 bg-red-400 rounded-tl-lg rounded-tr-lg text-center'>
     <h1 class='font-customFont text-[20vw] w-full text-white'>Projects</h1>
   </div>
@@ -220,21 +220,21 @@ function PortfolioForm({ formData, onInputChange }) {
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project1Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project1Date || "Example : 2024"}</h2>
-      <a href={${formData.Project1Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project1Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project1Detail || "Example : Features of your Project"}
       </p>
     </div>
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project2Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project2Date || "Example : 2024"}</h2>
-      <a href={${formData.Project2Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project2Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project2Detail || "Example : Features of your Project"}
       </p>
     </div>
     <div class='w-full p-2 md:w-[50%]'>
       <h1 class='font-customFont text-2xl mt-2 md:text-3xl'>${formData.Project3Name || "Example : Todo App"}</h1>
       <h2 class='font-bold text-[16px] font-customFont tracking-wider md:text-2xl'>${formData.Project3Date || "Example : 2024"}</h2>
-      <a href={${formData.Project3Link}} class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
+      <a href="${formData.Project3Link}" class='text-xl font-customFont tracking-wide md:text-2xl hover:border-b-2 border-black'>Github Link</a>
       <p class='font-customFont md:text-[21px]'>${formData.Project3Detail || "Example : Features of your Project"}
       </p>
     </div>
