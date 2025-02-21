@@ -342,398 +342,224 @@ function PortfolioForm({ formData, onInputChange }) {
   }
 
   return (
-    <div className="flex items-center justify-center ">
-      <div className="bg-gray-900 border-[1px] border-white rounded-2xl hover:border-white transition-all duration-200 md:w-[80vw] w-[95vw]">
-        <form className="mx-auto flex items-center space-y-4 py-16 px-2 md:px-4 font-semibold text-white flex-col">
-          <h1 className="text-white text-2xl font-customFont tracking-wider">Portfolio Information</h1>
-
-          {currentStep === 1 && (
-            <>
-              <h1 className='font-customFont tracking-wide text-xl text-center'>Page 1 Details</h1>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Role 1"
-                type="text"
-                name="role1"
-                id="role1"
-                value={formData.role1}
-                onChange={handleChange}
-                required
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Role 2"
-                type="text"
-                name="role2"
-                id="role2"
-                value={formData.role2}
-                onChange={handleChange}
-                required
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Bio"
-                name="bio"
-                id="bio"
-                rows="4"
-                value={formData.bio}
-                onChange={handleChange}
-              ></textarea>
-            </>
-          )}
-
-          {currentStep === 2 && (
-            <>
-              <h1 className='font-customFont tracking-wide text-xl text-center'>Page 2 Details</h1>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Name"
-                type="text"
-                name="name"
-                id="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Email"
-                type="email"
-                name="email"
-                id="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Phone No"
-                type="tel"
-                name="phone"
-                id="phone"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear1">Experience 1</label>
-              <label className='text-sm text-white font-customFont tracking-widest' htmlFor="exprienceYear1">Note: If you dont have any experience, than dont fill the experience section keep it as it is.</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Joining Year"
-                type="text"
-                name="experienceYear1"
-                id="experienceYear1"
-                value={formData.experienceYear1}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Role"
-                type="text"
-                name="experienceRole1"
-                id="experienceRole1"
-                value={formData.experienceRole1}
-                onChange={handleChange}
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Details , Example : what you did in the job."
-                name="experienceDetail1"
-                id="experienceDetail1"
-                rows="4"
-                value={formData.experienceDetail1}
-                onChange={handleChange}
-              ></textarea>
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear2">Experience 2</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Joining Year"
-                type="text"
-                name="experienceYear2"
-                id="experienceYear2"
-                value={formData.experienceYear2}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Role"
-                type="text"
-                name="experienceRole2"
-                id="experienceRole2"
-                value={formData.experienceRole2}
-                onChange={handleChange}
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Details , Example : what you did in the job."
-                name="experienceDetail2"
-                id="experienceDetail2"
-                rows="4"
-                value={formData.experienceDetail2}
-                onChange={handleChange}
-              ></textarea>
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="education">Education</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder=" School or College Name"
-                type="text"
-                name="CollegeName1"
-                id="CollegeName1"
-                value={formData.CollegeName1}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Qualification, ex: 10th, 12th"
-                type="text"
-                name="CollegeBranch1"
-                id="CollegeBranch1"
-                value={formData.CollegeBranch1}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="School or College name 2"
-                type="text"
-                name="CollegeName2"
-                id="CollegeName2"
-                value={formData.CollegeName2}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Qualification, ex: BE, BCOM , etc."
-                type="text"
-                name="CollegeBranch2"
-                id="CollegeBranch2"
-                value={formData.CollegeBranch2}
-                onChange={handleChange}
-              />
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear1">Skills</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Skill No 1 Example : DSA"
-                type="text"
-                name="skill1"
-                id="skill1"
-                value={formData.skill1}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Skill No 2 Example : Problem Solving"
-                type="text"
-                name="skill2"
-                id="skill2"
-                value={formData.skill2}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Skill No 3 Example : Team Work"
-                type="text"
-                name="skill3"
-                id="skill3"
-                value={formData.skill3}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Skill No 4 Example : Leadership"
-                type="text"
-                name="skill4"
-                id="skill4"
-                value={formData.skill4}
-                onChange={handleChange}
-              />
-            </>
-          )}
-
-          {currentStep === 3 && (
-            <>
-              <h1 className='font-customFont tracking-wide text-xl text-center'>Page 3 Details</h1>
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear1">Project 1</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Name of First Project"
-                type="text"
-                name="Project1Name"
-                id="Project1Name"
-                value={formData.Project1Name}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Which year you build the project(In Year)"
-                type="text"
-                name="Project1Date"
-                id="Project1Date"
-                value={formData.Project1Date}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Github Link of Project"
-                type="text"
-                name="Project1Link"
-                id="Project1Link"
-                value={formData.Project1Link}
-                onChange={handleChange}
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Details, Example : Features of your Project"
-                name="Project1Detail"
-                id="Project1Detail"
-                rows="4"
-                value={formData.Project1Detail}
-                onChange={handleChange}
-              ></textarea>
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear1">Project 2</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Name of Second Project"
-                type="text"
-                name="Project2Name"
-                id="Project2Name"
-                value={formData.Project2Name}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Which year you build the project(In Year)"
-                type="text"
-                name="Project2Date"
-                id="Project2Date"
-                value={formData.Project2Date}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Github Link of Project"
-                type="text"
-                name="Project2Link"
-                id="Project2Link"
-                value={formData.Project2Link}
-                onChange={handleChange}
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Details, Example : Features of your Project"
-                name="Project2Detail"
-                id="Project1Detail"
-                rows="4"
-                value={formData.Project2Detail}
-                onChange={handleChange}
-              ></textarea>
-              <label className='text-xl text-white font-customFont tracking-wider' htmlFor="exprienceYear1">Project 3</label>
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Name of Third Project"
-                type="text"
-                name="Project3Name"
-                id="Project3Name"
-                value={formData.Project3Name}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Which year you build the project(In Year)"
-                type="text"
-                name="Project3Date"
-                id="Project3Date"
-                value={formData.Project3Date}
-                onChange={handleChange}
-              />
-              <input
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Github Link of Project"
-                type="text"
-                name="Project3Link"
-                id="Project3Link"
-                value={formData.Project3Link}
-                onChange={handleChange}
-              />
-              <textarea
-                className="bg-slate-900 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-gray-800"
-                placeholder="Details, Example : Features of your Project"
-                name="Project3Detail"
-                id="Project3Detail"
-                rows="4"
-                value={formData.Project3Detail}
-                onChange={handleChange}
-              ></textarea>
-            </>
-          )}
-
-          <div className="flex justify-between w-full">
-            {currentStep > 1 && (
-              <button
-                type="button"
-                class="bg-white text-center w-[45%] md:w-[40%] rounded-2xl h-14 relative font-sans text-black text-xl font-semibold group "
-                onClick={prevStep}
-              >
-                <div
-                  class="bg-green-400 rounded-xl h-12 w-[35%] md:w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-full z-10 duration-500"
-                >
-                  <svg
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="#000000"
-                      d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
-                    ></path>
-                    <path
-                      fill="#000000"
-                      d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
-                    ></path>
-                  </svg>
-                </div>
-                <p class="translate-x-2 text-right md:text-center">Previous</p>
-              </button>
-
-            )}
-            {currentStep < 3 ? (
-              <button
-              type="button"
-              class="bg-white text-center w-[45%] md:w-[40%] rounded-2xl h-14 relative font-sans text-black text-xl font-semibold group flex gap-1 items-center md:block"
-              onClick={nextStep}
-            >
-              <div
-                class="bg-blue-400 rounded-xl h-12 w-[32%] md:w-1/4 flex items-center justify-center absolute right-1 top-[4px] group-hover:w-full z-10 duration-500"
-              >
-                <svg
-                  width="25px"
-                  height="25px"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#000000"
-                    d="M800 544H160a32 32 0 0 1 0-64h640a32 32 0 0 1 0 64z"
-                  ></path>
-                  <path
-                    fill="#000000"
-                    d="M786.752 512 521.344 246.656a32 32 0 1 1 45.312-45.312l288 288a32 32 0 0 1 0 45.312l-288 288a32 32 0 0 1-45.312-45.312L786.752 512z"
-                  ></path>
-                </svg>
+    <div className="min-h-screen bg-gray-950 py-12 px-4">
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-gray-900 rounded-2xl shadow-xl border border-gray-800">
+          <form className="p-8">
+            <div className="text-center mb-8">
+              <h1 className="text-3xl font-bold text-white mb-2">Portfolio Information</h1>
+              <div className="flex justify-center gap-2 mb-4">
+                {[1, 2, 3].map((step) => (
+                  <div
+                    key={step}
+                    className={`w-3 h-3 rounded-full ${currentStep >= step ? 'bg-blue-500' : 'bg-gray-600'
+                      }`}
+                  />
+                ))}
               </div>
-              <p class="translate-x-2">Next</p>
-            </button>
-            
-            ) : (
-              <button
-                type="button"
-                className="w-1/3 p-2 bg-gray-50 rounded-full font-bold text-gray-900 border-[4px] border-gray-700 hover:border-blue-500 transition-all duration-200"
-                onClick={handleDownload}
-              >
-                Download Portfolio
-              </button>
-            )}
-          </div>
-        </form>
+              <p className="text-gray-400">Step {currentStep} of 3</p>
+            </div>
+
+            <div className="space-y-6">
+              {currentStep === 1 && (
+                <div className="space-y-4">
+                  <h2 className="text-xl font-semibold text-white text-center mb-6">Basic Information</h2>
+                  <div>
+                    <input
+                      className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                      placeholder="Primary Role"
+                      type="text"
+                      name="role1"
+                      value={formData.role1}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <input
+                      className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                      placeholder="Secondary Role"
+                      type="text"
+                      name="role2"
+                      value={formData.role2}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <textarea
+                      className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                      placeholder="Professional Bio"
+                      name="bio"
+                      rows="4"
+                      value={formData.bio}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
+              )}
+
+              {currentStep === 2 && (
+                <div className="space-y-4">
+                  <h2 className="text-xl font-semibold text-white text-center mb-6">Experience & Skills</h2>
+                 
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                      placeholder="Full Name"
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                    <input
+                      className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                      placeholder="Email Address"
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="mt-8">
+                    <h3 className="text-lg font-medium text-white mb-4">Experience</h3>
+                    <h3 className='text-lg font-semibold text-white text-center mb-6'>Note: If you dont have any experience then dont fill the details, keep it as it is.</h3>
+                    <div className="space-y-6">
+                      {[1, 2].map((expNum) => (
+                        <div key={expNum} className="space-y-4 p-4 bg-gray-800 rounded-lg">
+                          <input
+                            className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            placeholder="Year"
+                            type="text"
+                            name={`experienceYear${expNum}`}
+                            value={formData[`experienceYear${expNum}`]}
+                            onChange={handleChange}
+                          />
+                          <input
+                            className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            placeholder="Position"
+                            type="text"
+                            name={`experienceRole${expNum}`}
+                            value={formData[`experienceRole${expNum}`]}
+                            onChange={handleChange}
+                          />
+                          <textarea
+                            className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            placeholder="Job Description"
+                            name={`experienceDetail${expNum}`}
+                            rows="3"
+                            value={formData[`experienceDetail${expNum}`]}
+                            onChange={handleChange}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="mt-8">
+                    <h3 className="text-lg font-medium text-white mb-4">Skills</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {[1, 2, 3, 4].map((skillNum) => (
+                        <input
+                          key={skillNum}
+                          className="w-full bg-gray-800 text-white rounded-lg px-4 py-3 border border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                          placeholder={`Skill ${skillNum}`}
+                          type="text"
+                          name={`skill${skillNum}`}
+                          value={formData[`skill${skillNum}`]}
+                          onChange={handleChange}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {currentStep === 3 && (
+                <div className="space-y-6">
+                  <h2 className="text-xl font-semibold text-white text-center mb-6">Projects</h2>
+                  {[1, 2, 3].map((projectNum) => (
+                    <div key={projectNum} className="space-y-4 p-6 bg-gray-800 rounded-lg">
+                      <h3 className="text-lg font-medium text-white">Project {projectNum}</h3>
+                      <input
+                        className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                        placeholder="Project Name"
+                        type="text"
+                        name={`Project${projectNum}Name`}
+                        value={formData[`Project${projectNum}Name`]}
+                        onChange={handleChange}
+                      />
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input
+                          className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                          placeholder="Year"
+                          type="text"
+                          name={`Project${projectNum}Date`}
+                          value={formData[`Project${projectNum}Date`]}
+                          onChange={handleChange}
+                        />
+                        <input
+                          className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                          placeholder="GitHub Link"
+                          type="text"
+                          name={`Project${projectNum}Link`}
+                          value={formData[`Project${projectNum}Link`]}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <textarea
+                        className="w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                        placeholder="Project Details"
+                        name={`Project${projectNum}Detail`}
+                        rows="3"
+                        value={formData[`Project${projectNum}Detail`]}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="flex justify-between mt-8">
+              {currentStep > 1 && (
+                <button
+                  type="button"
+                  onClick={prevStep}
+                  className="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition duration-200 flex items-center gap-2"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                  Previous
+                </button>
+              )}
+
+              {currentStep < 3 ? (
+                <button
+                  type="button"
+                  onClick={nextStep}
+                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-200 flex items-center gap-2 ml-auto"
+                >
+                  Next
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={handleDownload}
+                  className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-200 flex items-center gap-2 ml-auto"
+                >
+                  Download Portfolio
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </button>
+              )}
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
